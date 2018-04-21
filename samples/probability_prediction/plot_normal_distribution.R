@@ -1,6 +1,7 @@
 # Create a sample of 5000 numbers which are normally distributed
 # with mean of 777 and standard deviation of 100
 # rnorm() is used to generate random numbers whose distribution is normal
+# arguments to this function are in the order sample size, mean and S.D.
 y <- rnorm(5000, 777, 100)
 
 # Give the chart file a name
