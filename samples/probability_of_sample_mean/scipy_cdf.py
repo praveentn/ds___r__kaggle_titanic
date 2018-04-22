@@ -33,7 +33,7 @@ sample_std = pop_std_sigma / m.sqrt(n)
 # sample_std = 15/√100 = 1.5
 
 # cdf - cumulative density function
-# prob_sample_std = scipy.stats.norm(loc=x-bar, scale=sample_std).cdf(x)
+# prob_sample_std = sp.norm(loc=x-bar, scale=sample_std).cdf(x)
 # prob_sample_std = sp.norm(220, 1.5).cdf(217)
 
 prob_sample_std = sp.norm(pop_mean_mu, sample_std).cdf(x)
