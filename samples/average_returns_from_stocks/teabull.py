@@ -36,10 +36,10 @@ pop_mean_mu2 = xbar - sp.t.ppf(0.025,df=n-1)*(sam_std/m.sqrt(n))
 
 # OUTPUT
 
-# >>> mu1
+# >>> pop_mean_mu1
 # 8.431764604523753
   
-# >>> mu2 
+# >>> pop_mean_mu2
 # 12.308235395476245
 
 # ALTERNATE SOLUTION
