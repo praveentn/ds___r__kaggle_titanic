@@ -37,6 +37,9 @@ data.Price.mean()
 # using axis
 data.mean(axis=1)
 
+# skipping values
+data.mean(axis=0, skipna=True)
+
 # >>> data.Price.mean()
 # 163862.12511938874
 
