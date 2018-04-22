@@ -33,6 +33,7 @@ sample_std = pop_std_sigma / m.sqrt(n)
 # sample_std = 15/√100 = 1.5
 
 # cdf - cumulative density function
+# gives the probability that the variate has a value less than or equal to the given value.
 # prob_sample_std = sp.norm(loc=x-bar, scale=sample_std).cdf(x)
 # prob_sample_std = sp.norm(220, 1.5).cdf(217)
 
