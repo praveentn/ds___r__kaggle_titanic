@@ -1,4 +1,4 @@
-# For a given Mean 494 and standard deviation = 100
+# (I) For a given Mean 494 and standard deviation = 100
 
 import scipy.stats as sp
 
@@ -61,3 +61,35 @@ x2 = sp.norm(494, 100).cdf(600)
 required_probability = x2 - x1
 # >>> x2 - x1
 # 0.8292378553956377
+
+
+# (II) Suppose during any hour in a store, the average number of shoppers is 448,
+# with the standard deviation of 21 shoppers. What is the probability that 
+# a random sample of 49 different shopping hours will yield a sample mean between 
+# 441 and 446 shoppers.
+
+# Solution
+
+# We know the Mean (µ) & Standard Deviation (σ) of the Population, 448 and 21
+# Sample size, n = 49 which is greater than 30
+# find probability of sample mean between 441 and 446
+
+# CODE
+
+pop_mean_mu = 448
+pop_std_sigma = 21
+
+x1 = sp.norm(448, 21).cdf(441)
+x2 = sp.norm(448, 21).cdf(446)
+
+# >>> x1 = sp.norm(448, 21).cdf(441)
+# >>> x2 = sp.norm(448, 21).cdf(446)
+# >>> x2
+# 0.46206285593374585
+# >>> x1
+# 0.36944134018176367
+
+required_probability = x2 - x1
+
+# >>> x2 - x1
+# 0.09262151575198219
