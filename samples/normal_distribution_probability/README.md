@@ -11,3 +11,8 @@ For a given Mean 494 and standard deviation = 100 <br/>
 
 Python <br/>
 Scipy  <br/>
+
+
+# OUTPUT
+
+The variable `required_probability` is the output for each of the above problems. <br/> 
