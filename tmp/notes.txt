@@ -5,3 +5,15 @@
 *Survival rate of women are more compared to men*
 
 ***
+
+summary(data.combined$Age)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+   0.17   21.00   28.00   29.88   39.00   80.00     263 
+> 
+
+ summary(data.combined[1:891, "Age"])
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+   0.42   20.12   28.00   29.70   38.00   80.00     177 
+   
+   
+   
