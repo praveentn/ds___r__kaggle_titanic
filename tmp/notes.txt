@@ -16,4 +16,6 @@ summary(data.combined$Age)
    0.42   20.12   28.00   29.70   38.00   80.00     177 
    
    
-   
+   >>> Why ANOVA and why not multiple t-tests?
+   >>> with every t-test, the error gets accumulated
+   >>> which will not give accurate results
