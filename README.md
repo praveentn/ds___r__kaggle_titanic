@@ -2,6 +2,12 @@
 Trying out data analysis using R and Python
 - normal distribution
 - calculation of probability
+- z distribution
+- t test
+- f test
+- p-value
+- significance levels
+
 
 # hypothesis
 testing different hypotheses 
