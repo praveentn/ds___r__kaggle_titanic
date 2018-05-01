@@ -32,7 +32,7 @@ import math as m
 xbar = 1999.6
 pop_std_sigma = 1.30
 n = 40                # sample_size
-x = 2000              # sample_mean_whose_probability_to_be_found
+x = 2000
 
 sample_std = pop_std_sigma / m.sqrt(n)
 
@@ -43,10 +43,17 @@ sample_std = pop_std_sigma / m.sqrt(n)
 # cdf - cumulative density function
 # gives the probability that the variate has a value less than or equal to the given value.
 
-'''
 # p_value = sp.norm.cdf(1999.6, loc=2000, scale=1.30/m.sqrt(40))
-# Have a doubt on this part; whether loc equals to x or xbar in the function
-'''
+# Had a doubt on this part; whether loc equals to x or xbar in the function
+# p_value = sp.norm(loc = xbar, scale=1.30/m.sqrt(40)).cdf(2000)
+# >>> p_value
+# 0.9741736525121241  # wrong!!!
+
+# Here we're finding the probability of getting a sample mean of 1999.6
+# in a normally distributed population, with mean of 2000 and pop std of 1.3
+# p_value = sp.norm(loc = 2000, scale=1.30/m.sqrt(40)).cdf(1999.6)
+# So, the normal distribution has a mean of 'x' and 'scale' as shown below.
+# And we need to calculated the 'cdf' of 'xbar' in this case
 
 p_value = sp.norm(loc = x, scale=1.30/m.sqrt(40)).cdf(xbar)
 
