@@ -54,6 +54,9 @@ sample_std = pop_std_sigma / m.sqrt(n)
 # p_value = sp.norm(loc = 2000, scale=1.30/m.sqrt(40)).cdf(1999.6)
 # So, the normal distribution has a mean of 'x' and 'scale' as shown below.
 # And we need to calculated the 'cdf' of 'xbar' in this case
+# The location (loc) keyword specifies the mean.
+# The scale (scale) keyword specifies the standard deviation.
+# scipy.stats.norm(loc=mean, scale=standard deviation)
 
 p_value = sp.norm(loc = x, scale=1.30/m.sqrt(40)).cdf(xbar)
 
