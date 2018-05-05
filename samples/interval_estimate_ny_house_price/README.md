@@ -1,6 +1,6 @@
 # PROBLEM
 
-Come up with an interval estimate for the prices of houses in NY suburb.
+Come up with an interval estimate for the prices of houses in NY suburb with a confidence level of 95%.
 
 Given 'NY_house.csv'
 
