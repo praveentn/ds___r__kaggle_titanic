@@ -76,4 +76,4 @@ def_pred_class
 
 # CONCLUSION
 
-# Model has an accuracy of 73% to predict loan defaulters.
+# Model has an accuracy of 67.33% to predict loan defaulters.
